@@ -11,6 +11,10 @@ header, footer{
     font-size: 24px;
     margin: 5px;
 }
+p:hover{
+    cursor: pointer;
+    color: #5245c2;
+}
 .perfil-card{
     margin: auto;
     background-color: thistle;
