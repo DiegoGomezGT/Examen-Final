@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+header, footer{
+    text-align: center;
+}
+.nombre{
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 5px;
+}
+.perfil-card{
+    margin: auto;
+    background-color: thistle;
+    width: 90%;
+    max-width: 700px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 200px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+ul{
+     display: flex;
+     width: 100%;
+     justify-content: space-around;
+     padding: 0;
+    flex-wrap: wrap;
+}
+
+ul li{
+     display: inline-block;
+     padding: 0 10px;
+     align-items: center;
+}
+
+ul li a{ 
+     font-size: 14px;
+     text-decoration: none;
+
+     color: #5245c2;
+     font-weight: bold;
+
+     background: linear-gradient(currentColor, currentColor);
+     background-position: 100% 100%;
+     background-repeat: no-repeat;
+     background-size: 0% 2px;
+     transition: all 0.5s;
+
+}
+
+ul li a:hover{
+     color: #15097d;
+     background-size: 100% 2px;
+}
+@media screen and (max-width: 600px) {
+    .perfil-card{ 
+        width: 90%;
+    }
+    ul{
+        flex-direction: column;
+    }
+}
